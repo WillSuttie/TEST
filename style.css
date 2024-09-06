@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121213;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+#alert-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for the word display container */
+#guessesDisplay {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for individual word rows */
+.div-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for individual letter boxes */
+.dynamic-div {
+    display: flex;
+    text-align: center;
+    font-family: 'Franklin Gothic', Arial, Helvetica;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+#virtualKeyboard {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.keyboard-row {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/* Style for individual keyboard keys */
+.key-button {
+    text-align: center;
+    font-family: 'Franklin Gothic', Arial, Helvetica;
+    font-size: 20px;
+    width: 25px;
+    height: 35px;
+    margin: 3px;
+    border: 2px solid #818384;
+    border-radius: 5px;
+    background: #818384;
+    color: #ffffff;
+}
+
+.key-button:hover {
+    color: #f1f1f1
+}
+
+.correct {
+    background-color: #538d4E;
+    border: 1px solid #538d4E;
+}
+
+.correct:hover {
+    color: #121221;
+}
+
+.partial {
+    background-color: #b59f3b;
+    border: 1px solid #b59f3b;
+}
+
+.incorrect {
+    background-color: #3a3a3c;
+    border: 1px solid #3a3a3c;
+}
+
+.none {
+    background-color: #121213;
+    border: 1px solid #818384;
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+}
+
+.alert {
+    background-color: #430b10;
+    color: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic', Arial, Helvetica;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    text-align: center;
+    padding-right: 20px;
+    gap: 10px; /* Add gap between text and button */
+}
+
+#alert-container {
+    display: flex;
+    gap: 10px;
+}
+
+.alert-button {
+    background-color: #FFFFFF;
+    color: #430b10;
+    border: none;
+    padding: 5px 10px;
+    margin: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Franklin Gothic', Arial, Helvetica;
+    border-left-width: 20px;
+    align-self: center;
+    box-sizing: border-box;
+    text-align: center;
+    min-height: 30px;
+    max-width: 80px;
+}
+
+@media (max-width: 600px) {
+    .alert-button {
+        max-width: 60px;
+        min-height: 25px;
+        padding: 4px 8px;
+    }
+}
+
+.alert-button:hover {
+    background-color: #f1f1f1;
+}
